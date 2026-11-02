@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RootForge device entry",
+  "type": "object",
+  "required": ["schema_version", "device", "brand", "model", "soc", "variants"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "device": { "type": "string", "pattern": "^[a-z0-9_]+$", "description": "ro.product.device, the codename" },
+    "brand": { "type": "string", "description": "ro.product.brand, normalised (Xiaomi, Redmi, POCO, ...)" },
+    "series": { "type": "string", "description": "marketing series, e.g. Redmi Note" },
+    "model": { "type": "string", "description": "ro.product.model / market name" },
+    "soc": { "type": "string", "description": "SoC marketing name" },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["kernel", "source"],
+        "properties": {
+          "rom": { "type": "string", "description": "ROM version, e.g. OS3.0.306.0.WOPCNXM" },
+          "android": { "type": "string", "description": "Android version, e.g. 14" },
+          "sdk": { "type": "integer" },
+          "build_id": { "type": "string" },
+          "security_patch": { "type": "string" },
+          "fingerprint": { "type": "string", "description": "ro.build.description or full fingerprint of the OTA build" },
+          "kernel": { "type": "string", "description": "uname -r release string" },
+          "kernel_family": { "type": "string", "description": "e.g. 6.1" },
+          "page_size": { "type": "integer", "description": "4096 or 16384" },
+          "profile": { "type": "string", "description": "built-in profile file name this variant maps to, if known" },
+          "source": { "enum": ["device", "ota", "manual"] },
+          "evidence": { "type": "string" },
+          "added": { "type": "string", "format": "date" },
+          "confirmations": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-02",
+  "devices": [
+    {
+      "device": "amethyst",
+      "brand": "Redmi",
+      "series": "Redmi Note",
+      "model": "Redmi Note 14 Pro+",
+      "soc": "Qualcomm Snapdragon 7s Gen 3 (SM7635)",
+      "kernels": ["6.1.138-android14-11-g0c3d559bcd85-ab14529422"],
+      "variants": 1,
+      "path": "devices/amethyst.json"
+    }
+  ]
+}

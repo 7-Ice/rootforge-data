@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "device": "amethyst",
+  "brand": "Redmi",
+  "series": "Redmi Note",
+  "model": "Redmi Note 14 Pro+",
+  "soc": "Qualcomm Snapdragon 7s Gen 3 (SM7635)",
+  "variants": [
+    {
+      "rom": "OS3.0.306.0.WOPCNXM",
+      "android": "14",
+      "sdk": 34,
+      "build_id": "UKQ1.231003.002",
+      "fingerprint": "Redmi/amethyst/amethyst:14/UKQ1.231003.002/OS3.0.306.0.WOPCNXM:user/release-keys",
+      "kernel": "6.1.138-android14-11-g0c3d559bcd85-ab14529422",
+      "kernel_family": "6.1",
+      "page_size": 4096,
+      "profile": "6.1.138-android14-11-g0c3d559bcd85-ab14529422",
+      "source": "device",
+      "evidence": "uname -r + ro.product.device on the running device; attack verified end to end",
+      "added": "2026-11-02",
+      "confirmations": 1
+    }
+  ]
+}
