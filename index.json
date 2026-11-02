@@ -4,8 +4,9 @@
   "devices": [
     {
       "device": "amethyst",
+      "manufacturer": "Xiaomi",
       "brand": "Redmi",
-      "series": "Redmi Note",
+      "series": "Note",
       "model": "Redmi Note 14 Pro+",
       "soc": "Qualcomm Snapdragon 7s Gen 3 (SM7635)",
       "kernels": ["6.1.138-android14-11-g0c3d559bcd85-ab14529422"],
